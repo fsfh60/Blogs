@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3QCnfodJcG6IDLpr8S/VhNvB/3sPPeBOhL5TdhGW6kk=",
+  "Source": "BlogRUS.API.Call",
+  "BasePath": "_content/BlogRUS.API.Call",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

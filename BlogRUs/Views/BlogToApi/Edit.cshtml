@@ -1,0 +1,20 @@
+﻿@model BlogRUs.ViewModels.BlogViewModel
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+
+<form method="post" asp-antiforgery="true" asp-route-id="@(ViewContext.RouteData.Values["id"])">
+
+
+    <div class="mb-3">
+        <label asp-for="Title"></label>
+        <input type="text" asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

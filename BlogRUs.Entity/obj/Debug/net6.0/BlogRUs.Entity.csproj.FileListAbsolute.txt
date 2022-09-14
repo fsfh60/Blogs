@@ -1,0 +1,15 @@
+C:\Code\BlogRUs\BlogRUs.Entity\bin\Debug\net6.0\BlogRUs.Entity.deps.json
+C:\Code\BlogRUs\BlogRUs.Entity\bin\Debug\net6.0\BlogRUs.Entity.dll
+C:\Code\BlogRUs\BlogRUs.Entity\bin\Debug\net6.0\BlogRUs.Entity.pdb
+C:\Code\BlogRUs\BlogRUs.Entity\bin\Debug\net6.0\BlogRUs.Models.dll
+C:\Code\BlogRUs\BlogRUs.Entity\bin\Debug\net6.0\BlogRUs.Models.pdb
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.csproj.AssemblyReference.cache
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.AssemblyInfoInputs.cache
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.AssemblyInfo.cs
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.csproj.CoreCompileInputs.cache
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.csproj.CopyComplete
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.dll
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\refint\BlogRUs.Entity.dll
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\BlogRUs.Entity.pdb
+C:\Code\BlogRUs\BlogRUs.Entity\obj\Debug\net6.0\ref\BlogRUs.Entity.dll

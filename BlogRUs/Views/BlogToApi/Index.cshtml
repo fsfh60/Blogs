@@ -1,0 +1,98 @@
+﻿@model BlogRUs.ViewModels.ListBlogViewModel
+@using System.Linq
+
+<div class="d-flex flex-row-reverse mb-3 ">
+    <div class="control-group">
+        <a class="btn btn-success " asp-action="Create" asp-controller="Demo2">+ New</a>
+    </div>
+</div>
+
+<div class="form-outline mb-4">
+
+    <form asp-action="Index" method="Get">
+        <input type="text" asp-for="Searching" class="form-control" placeholder="Search..." />
+    </form>
+
+</div>
+
+
+@if (Model == null || Model.Records == null || !Model.Records.Any())
+{
+    <div class="alert alert-warning">
+        There are nothing in the database
+    </div>
+    return;
+}
+
+<table class="table table-bordered">
+
+    @{
+        var first = Model.Records.FirstOrDefault();
+    }
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => first.Title)</th>
+            <th>@Html.DisplayNameFor(x => first.Description)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var category in Model.Records)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => category.Title)</td>
+                <td>@Html.DisplayFor(x => category.Description)</td>
+
+                <td class="btn-group">
+                    <a href="/BlogToApi/edit/@category.Id" class="btn btn-primary">Edit</a>
+                    <form action="/BlogToApi/Delete/@category.Id" method="post">
+                        <button type="submit" class="btn btn-danger">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>
+
+<ul class="pagination">
+    @{
+        var pageNumber = Model.PageNumber;
+
+        var currentPage = Model.CurrentPage;
+    }
+
+    @for (int i = 1; i <= pageNumber; i++)
+    {
+        var queryParamters = new List<string>()
+    {
+    $"page={i}" // this is the same as "page=" + i.ToString()
+    };
+
+        if (!String.IsNullOrWhiteSpace(Model.Searching))
+        {
+            queryParamters.Add($"searching={Model.Searching}");
+        }
+
+        var cssClasses = new List<string>()
+    {
+    "page-item"
+    };
+
+        if (i == currentPage)
+        {
+            cssClasses.Add("active");
+        }
+
+        <li class="page-item active"><a class="@(String.Join(' ', cssClasses)) " href="?@(String.Join('&', queryParamters))">@i</a></li>
+
+    }
+    }
+</ul>
+
+
+

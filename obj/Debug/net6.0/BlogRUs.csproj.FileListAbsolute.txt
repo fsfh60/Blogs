@@ -1,0 +1,5 @@
+C:\Code\BlogRUs\obj\Debug\net6.0\BlogRUs.csproj.AssemblyReference.cache
+C:\Code\BlogRUs\obj\Debug\net6.0\BlogRUs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\BlogRUs\obj\Debug\net6.0\BlogRUs.AssemblyInfoInputs.cache
+C:\Code\BlogRUs\obj\Debug\net6.0\BlogRUs.AssemblyInfo.cs
+C:\Code\BlogRUs\obj\Debug\net6.0\BlogRUs.csproj.CoreCompileInputs.cache
